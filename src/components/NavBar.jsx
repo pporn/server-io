@@ -34,10 +34,10 @@ class NavBar extends React.Component {
       },
 
       navBarEndItems: {
-        About: {
+        Status: {
           key: 1,
-          name: 'About',
-          url: 'http://server.io',
+          name: 'Status',
+          url: 'http://status.server.io',
         },
       },
 
