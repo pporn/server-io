@@ -30,7 +30,11 @@ class NavBar extends React.Component {
           name: 'MiniDLNA',
           url: 'http://minidlna.server.io',
         },
-
+        Drive: {
+          key: 5,
+          name: 'Drive',
+          url: 'http://drive.server.io',
+        },
       },
 
       navBarEndItems: {
@@ -58,6 +62,7 @@ class NavBar extends React.Component {
         <div className="navbar-menu">
           <div className="navbar-start">
             {
+              // inflate navbar items
               Object.keys(navBarStartItems).map(
                 i => (
                   <NavBarItem
