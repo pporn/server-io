@@ -25,7 +25,7 @@ function NavBar() {
       </div>
 
       <div className="navbar-end">
-        <NavBarItem name="About" url="http://minidlna.server.io" />
+        <NavBarItem name="About" url="http://server.io" />
       </div>
 
     </nav>
