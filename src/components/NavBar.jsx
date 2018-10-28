@@ -30,6 +30,7 @@ function NavBar() {
           <a className="navbar-item" href="http://minidlna.server.io">
             MiniDLNA
           </a>
+
         </div>
       </div>
 
