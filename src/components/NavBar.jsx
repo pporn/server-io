@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBarItem from './NavBarItem';
 
 import '../css/bulma.min.css';
 import icon from '../images/icon.png';
@@ -15,29 +16,16 @@ function NavBar() {
       <div className="navbar-menu">
         <div className="navbar-start">
 
-          <a className="navbar-item" href="http://server.io">
-            Home
-          </a>
-
-          <a className="navbar-item" href="http://aria2.server.io">
-            AriaNg
-          </a>
-
-          <a className="navbar-item" href="http://jupyter.server.io">
-            Jupyter
-          </a>
-
-          <a className="navbar-item" href="http://minidlna.server.io">
-            MiniDLNA
-          </a>
+          <NavBarItem name="Home" url="http://server.io" />
+          <NavBarItem name="AriaNg" url="http://aria2.server.io" />
+          <NavBarItem name="Jupyter" url="http://jupyter.server.io" />
+          <NavBarItem name="MiniDLNA" url="http://minidlna.server.io" />
 
         </div>
       </div>
 
       <div className="navbar-end">
-        <a className="navbar-item" href="http://server.io">
-          About
-        </a>
+        <NavBarItem name="About" url="http://minidlna.server.io" />
       </div>
 
     </nav>
