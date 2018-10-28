@@ -11,18 +11,22 @@ class NavBar extends React.Component {
     this.state = {
       navBarStartItems: {
         Home: {
+          key: 1,
           name: 'Home',
           url: 'http://server.io',
         },
         AriaNg: {
+          key: 2,
           name: 'AriaNg',
           url: 'http://aria2.server.io',
         },
         Jupyter: {
+          key: 3,
           name: 'Jupyter',
           url: 'http://jupyter.server.io',
         },
         MiniDLNA: {
+          key: 4,
           name: 'MiniDLNA',
           url: 'http://minidlna.server.io',
         },
@@ -31,6 +35,7 @@ class NavBar extends React.Component {
 
       navBarEndItems: {
         About: {
+          key: 1,
           name: 'About',
           url: 'http://server.io',
         },
@@ -54,7 +59,13 @@ class NavBar extends React.Component {
           <div className="navbar-start">
             {
               Object.keys(navBarStartItems).map(
-                i => <NavBarItem name={navBarStartItems[i].name} url={navBarStartItems[i].url} />,
+                i => (
+                  <NavBarItem
+                    key={navBarStartItems[i].key}
+                    name={navBarStartItems[i].name}
+                    url={navBarStartItems[i].url}
+                  />
+                ),
               )
             }
           </div>
@@ -63,7 +74,13 @@ class NavBar extends React.Component {
         <div className="navbar-end">
           {
             Object.keys(navBarEndItems).map(
-              i => <NavBarItem name={navBarEndItems[i].name} url={navBarEndItems[i].url} />,
+              i => (
+                <NavBarItem
+                  key={navBarEndItems[i].key}
+                  name={navBarEndItems[i].name}
+                  url={navBarEndItems[i].url}
+                />
+              ),
             )
           }
         </div>
